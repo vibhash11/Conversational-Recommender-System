@@ -4,7 +4,8 @@ from pymessenger import Bot
 from utils import wit_response, get_news_elements,get_images
 from recommendations import recommend
 app = Flask(__name__)
-PAGE_ACCESS_TOKEN = 'EAAbKiaoKwC8BABODxoVtFbT8oiyW0GsaOMCyLjAopMB0sGswNmHSomt9x2J8xM4Dx5wM1wxXBkeQqDjuLcZBmSfNZBlP2ZBoq3x4hEnjhdfgdZAexAlxNAFaVq0tGmJx7UWf3SzwYmAHb2ZCaGOiQjaE0Q6wQVfZBAv6pBg94x0gZDZD'
+
+PAGE_ACCESS_TOKEN = '<insert your page acess token here>'
 
 bot = Bot(PAGE_ACCESS_TOKEN)
 
