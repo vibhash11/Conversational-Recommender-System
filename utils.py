@@ -2,7 +2,7 @@ from wit import Wit
 from gnewsclient import gnewsclient
 import urllib.request
 
-access_token = 'XZBEDHIR3TDVY6Z57KMBIN3E3IR3UXEG'
+access_token = '<insert your wit access token here>'
 
 client = Wit(access_token = access_token)
 def wit_response(message_text):
