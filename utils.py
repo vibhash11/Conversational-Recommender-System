@@ -14,12 +14,12 @@ def wit_response(message_text):
 	return categories
 
 def get_news_elements(categories):
-	news_client = gnewsclient()
-	news_client.query = ''
+	news_client = gnewsclient.NewsClient()
+	news_client.topic = ''
 	if 'news_type' in categories.keys():
-		news_client.query+=categories['news_type']+' '
+		news_client.topic+=categories['news_type']+' '
 	if 'location' in categories.keys():
-		news_client.query+=categories['location']
+		news_client.topic+=categories['location']
 	news_items = news_client.get_news()
 	elements = []
 	for item in news_items:
